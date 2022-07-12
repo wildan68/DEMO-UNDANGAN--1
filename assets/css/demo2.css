@@ -17,6 +17,7 @@
     --gray-dark: #B2BEC3;
     --cream: #FFE3C2;
     --cream-dark: #a07f59;
+    --green-cream: #dffcdc;
 }
 
 * {
@@ -122,8 +123,9 @@ select {
     }
 }
 
-button.btn-primary-landing {
-    padding: 15px 30px 15px 30px;
-    border-radius: 14px;
-    font-weight: 600;
+.bg {
+    background-image: url('/decoration/demo2/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

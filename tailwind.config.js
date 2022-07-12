@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
         "./components/**/*.{js,vue,ts}",
@@ -17,6 +16,8 @@ module.exports = {
             'pink-light': '#FD79A8',
             'pink-dark': '#E84393',
             'pink-glamour': '#FF7675',
+            'pink-glamour-dark': '#b35150',
+            'pink-glamour-light': '#f5baba',
             'orange': '#E17055',
             'yellow': '#FDCB6E',
             'black-light': '#2D3436',
@@ -27,6 +28,7 @@ module.exports = {
             'cream-dark': '#a07f59',
             'blue': '#074cad',
             'blue-dark': '#06377a',
+            'green-cream': '#dffcdc',
         }
     },
     plugins: [],

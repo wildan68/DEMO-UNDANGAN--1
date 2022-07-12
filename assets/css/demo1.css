@@ -121,9 +121,3 @@ select {
         font-size: 18px;
     }
 }
-
-button.btn-primary-landing {
-    padding: 15px 30px 15px 30px;
-    border-radius: 14px;
-    font-weight: 600;
-}

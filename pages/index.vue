@@ -1,45 +1,33 @@
 <template>
-<div class="mainapp overflow-x-hidden">
-    <Header/>
-    <Name/>
-    <Date1/>
-    <Date2/>
-    <Surah/>
-    <Story/>
-    <Gallery/>
-    <BukuTamu/>
-    <Rekening/>
-</div>
+    <div class="mainapp text-black">
+        <Navbar/>
+        <Header/>
+        <Flow/>
+        <Template/>
+    </div>
 </template>
 
 <script>
-import Header from '../layouts/header.vue'
-import Name from '../layouts/name.vue'
-import Date1 from '../layouts/date1.vue'
-import Date2 from '../layouts/date2.vue'
-import Surah from '../layouts/surah.vue'
-import Story from '../layouts/story.vue'
-import Gallery from '../layouts/gallery.vue'
-import BukuTamu from '../layouts/bukutamu.vue'
-import Rekening from '../layouts/rekening.vue'
+import Navbar from '@/layouts/landingpage/navbar.vue'
+import Header from '@/layouts/landingpage/header.vue'
+import Flow from '@/layouts/landingpage/flow.vue'
+import Template from '@/layouts/landingpage/template.vue'
 
-import aos from 'aos';
-import 'aos/dist/aos.css';
+import '../assets/css/main.css'
 
 export default {
     components: {
+        Navbar,
         Header,
-        Name,
-        Date1,
-        Date2,
-        Surah,
-        Story,
-        Gallery,
-        BukuTamu,
-        Rekening,
+        Flow,
+        Template,
     },
-    mounted() {
-        aos.init();
-    }
+    header() {
+        return {
+            title: 'Landing Page',
+            description: 'Landing Page',
+            keywords: 'Landing Page',
+        }
+    },
 }
 </script>
